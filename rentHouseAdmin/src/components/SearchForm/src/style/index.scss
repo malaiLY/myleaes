@@ -1,0 +1,29 @@
+.table-search {
+  padding-bottom: 0 !important;
+  margin-bottom: 20px;
+
+  :deep(.el-form-item__label) {
+    font-weight: 600;
+    color: #334155;
+  }
+
+  :deep(.el-input__wrapper),
+  :deep(.el-select__wrapper) {
+    border-radius: 12px;
+    box-shadow: 0 0 0 1px #e2e8f0 inset;
+  }
+
+  :deep(.el-input__wrapper.is-focus),
+  :deep(.el-select__wrapper.is-focused) {
+    box-shadow:
+      0 0 0 1px #93c5fd inset,
+      0 0 0 4px rgb(59 130 246 / 0.08);
+  }
+
+  .operation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
