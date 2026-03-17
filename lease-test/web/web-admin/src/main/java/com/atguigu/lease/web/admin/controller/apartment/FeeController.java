@@ -65,6 +65,7 @@ public class FeeController {
     @Operation(summary = "根据id删除杂费值")
     @DeleteMapping("value/deleteById")
     public Result deleteFeeValueById(@RequestParam Long id) {
+        feeValueService.removeById(id);
         return Result.ok();
     }
 }
